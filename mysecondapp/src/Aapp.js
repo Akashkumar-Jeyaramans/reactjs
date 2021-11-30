@@ -1,11 +1,23 @@
 import React from 'react';
 
 function Aapp(props){
+    const handleSubmit=(event)=>{
+        event.preventDefault();
+       
+    }
     return(
         <>
         <div>
-        <h1>{props.title}</h1>
-        <h1>{props.count}</h1>
+        <form onSubmit={this.handleSubmit}>
+        
+        <label>First Name</label>
+        <input title ="firstname"/>
+        <label>Last Name</label>
+        <input />
+        <input type="submit" value="Submit" />
+        </form>
+         
+        
         </div>
         </>
     );

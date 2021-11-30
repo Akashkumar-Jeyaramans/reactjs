@@ -1,0 +1,21 @@
+.submit{
+    background-color: dodgerblue;
+    display: block;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    border: 3px solid green;
+    padding: 10px;
+}
+input{
+    display: block;
+}
+
+input:hover{
+    border: solid 2px black;
+}
+.err{
+    color: red;
+}
+

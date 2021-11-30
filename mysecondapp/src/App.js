@@ -11,6 +11,7 @@ import Calcu from './Calcu';
 import Calcufn from './Calcufn';
 import WordSearch from './WordSearch';
 import SignIn from './SignIn';
+import User from './User';
 
 import {
   BrowserRouter as Router,
@@ -18,7 +19,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
+
 function App() {
+
+ 
+
+
   return (
    <>
     <Router>
@@ -40,6 +47,7 @@ function App() {
         <Link className="nav-link active" to="/calcufn">Calcufn</Link>
         <Link className="nav-link active" to="/wordsearch">WordSearch</Link>
         <Link className="nav-link active" to="/signin">SignIn</Link>
+        <Link className="nav-link active" to="/user">User</Link>
 
         {/* <Link className="nav-link active" to="/calci">Calculator</Link>  */}
 	      </div>
@@ -80,6 +88,9 @@ function App() {
           </Route>
           <Route path="/signin">
           <SignIn></SignIn>
+          </Route>
+          <Route path="/user">
+          <User></User>
           </Route>
 
           {/* <Route path="/calci">
